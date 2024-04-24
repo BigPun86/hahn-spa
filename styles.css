@@ -1,0 +1,101 @@
+/* Allgemeine Einstellungen */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  height: 100%; /* Wichtig für die volle Bildschirmhöhe */
+}
+
+body {
+  padding-top: 70px;
+  background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Damit das Bild beim Scrollen fest bleibt */
+  padding-top: 56px; /* Die Höhe deiner Navigationsleiste */
+}
+
+/* Navbar-Styling */
+.navbar {
+  background-color: #ffffff; /* Hintergrundfarbe der Navbar */
+  border-bottom: 1px solid #cccccc; /* Untere Grenzlinie */
+  padding: 0.5rem 1rem; /* Abstand oben/unten und rechts/links */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Schrift fett machen */
+}
+
+.nav-item .nav-link {
+  color: #555555; /* Farbe der Navigationslinks */
+  margin-right: 1rem; /* Abstand zwischen den Links */
+}
+
+.nav-item .nav-link:hover {
+  color: #000000; /* Farbe der Navigationslinks beim Hover */
+}
+
+/* Anpassungen für den Login-Button */
+.btn-outline-primary {
+  border-color: #0066ff; /* Farbe des Button-Rahmens */
+  color: #0066ff; /* Textfarbe des Buttons */
+}
+
+.btn-outline-primary:hover {
+  background-color: #0066ff; /* Hintergrundfarbe beim Hover */
+  color: #ffffff; /* Textfarbe beim Hover */
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url("https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Höhe, um den gesamten Viewport einzunehmen */
+  margin-top: -70px; /* Gleich wie padding-top im body, um den Platz der Navbar auszugleichen */
+}
+.choice-text {
+  text-align: center; /* Zentriert den Text horizontal */
+  padding: 20px 0; /* Fügt Abstand oben und unten hinzu */
+}
+
+.choice-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff; /* Weiß oder eine andere Farbe, die gut sichtbar ist */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Halbtransparenter Hintergrund für Lesbarkeit */
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+/* Typografie */
+h1 {
+  color: #ffffff; /* Farbe für h1-Überschriften */
+  font-size: 2.5rem; /* Schriftgröße für h1 */
+}
+
+/* Responsive Bild-Einstellungen */
+.img-fluid {
+  max-width: 100%; /* Maximale Breite = Breite des Containers */
+  height: auto; /* Höhe wird automatisch angepasst */
+}
+
+/* Footer-Styling */
+footer {
+  background-color: #f8f9fa; /* Hintergrundfarbe des Footers */
+  padding: 1rem 0; /* Abstand oben/unten */
+  text-align: center; /* Zentriert den Text */
+  font-size: 0.8rem; /* Schriftgröße */
+  color: #777777; /* Farbe des Textes */
+}
+.navbar.fixed-top {
+  position: fixed; /* Fixiert die Navbar am oberen Rand des Viewports */
+  width: 100%; /* Navbar erstreckt sich über die volle Breite */
+  z-index: 1030; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
+}
